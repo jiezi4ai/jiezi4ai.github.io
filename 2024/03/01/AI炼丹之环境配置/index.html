@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jiezi4ai.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="＞ “New thins never frighten me, they only thrill me.” from John Glenn眼见这波AI浪潮甚猛烈，工作之外，给自己配置一个“炼丹炉”，闲睱之余也能做一点儿AI开发与应用的小尝试。 目标 &#x2F; 需求主要聚集于AI的下游应用，同时关注试用不同的大模型及AI产品，具体包括：  应用工具框架做大模型应用的开发尝试，主要使用langch">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI炼丹之环境配置">
+<meta property="og:url" content="https://jiezi4ai.github.io/2024/03/01/AI%E7%82%BC%E4%B8%B9%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="Jiezi4AI&#39;s Blog">
+<meta property="og:description" content="＞ “New thins never frighten me, they only thrill me.” from John Glenn眼见这波AI浪潮甚猛烈，工作之外，给自己配置一个“炼丹炉”，闲睱之余也能做一点儿AI开发与应用的小尝试。 目标 &#x2F; 需求主要聚集于AI的下游应用，同时关注试用不同的大模型及AI产品，具体包括：  应用工具框架做大模型应用的开发尝试，主要使用langch">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-8db934972fe6ae6ac57cef785c853390_b.jpg">
+<meta property="article:published_time" content="2024-03-01T14:33:25.000Z">
+<meta property="article:modified_time" content="2024-03-19T14:39:13.771Z">
+<meta property="article:author" content="Jiezi">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.zhimg.com/v2-8db934972fe6ae6ac57cef785c853390_b.jpg">
+
+<link rel="canonical" href="https://jiezi4ai.github.io/2024/03/01/AI%E7%82%BC%E4%B8%B9%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>AI炼丹之环境配置 | Jiezi4AI's Blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Jiezi4AI's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">One Man's Odyssey for AI</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/01/AI%E7%82%BC%E4%B8%B9%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jiezi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiezi4AI's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          AI炼丹之环境配置
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-03-01 22:33:25" itemprop="dateCreated datePublished" datetime="2024-03-01T22:33:25+08:00">2024-03-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-03-19 22:39:13" itemprop="dateModified" datetime="2024-03-19T22:39:13+08:00">2024-03-19</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>＞ “New thins never frighten me, they only thrill me.” <em>from John Glenn</em><br><img src="https://pic1.zhimg.com/v2-8db934972fe6ae6ac57cef785c853390_b.jpg" alt="Future world of Human and AI"><br>眼见这波AI浪潮甚猛烈，工作之外，给自己配置一个“炼丹炉”，闲睱之余也能做一点儿AI开发与应用的小尝试。</p>
+<h1 id="目标-需求"><a href="#目标-需求" class="headerlink" title="目标 &#x2F; 需求"></a>目标 &#x2F; 需求</h1><p>主要聚集于AI的下游应用，同时关注试用不同的大模型及AI产品，具体包括：</p>
+<ul>
+<li>应用工具框架做大模型应用的开发尝试，主要使用langchain、llamaindex等工具，拟尝试RAG、Agent等在特定场景的应用；</li>
+<li>测试和使用各类开源（以HuggingFace的transformer类为主）和闭源（主要是一些提供API服务）和大模型；</li>
+<li>就一些读到的paper或想法做算法实现。<br>因为自己日常也在做大模型相关的工作，因此，上述主要从兴趣出发，做轻量级（非底层的基础）、开发为主（暂不考虑过多部署及优化）、重算法和应用。</li>
+</ul>
+<h1 id="已有的资源"><a href="#已有的资源" class="headerlink" title="已有的资源"></a>已有的资源</h1><p>“工欲成其事，必先利其器”，盘点一下自己手中有哪些可用的资源。</p>
+<h2 id="硬件资源"><a href="#硬件资源" class="headerlink" title="硬件资源"></a>硬件资源</h2><ul>
+<li>服务器：２台合用的服务器，一个有40G的A6000显卡，另一个是24G的显卡，仅有限可用；</li>
+<li>Google Colab：每个月200计算时的<a target="_blank" rel="noopener" href="https://colab.research.google.com/">Google Colab</a>，性价比很高，可以跑一些开源的较小规模的大模型，也可以开发代码；</li>
+<li>本地机：无显卡，主要做代码开发；</li>
+</ul>
+<h2 id="软件资源"><a href="#软件资源" class="headerlink" title="软件资源"></a>软件资源</h2><ul>
+<li>开源大语言模型上主要靠穷人三宝：Qwen1.5-14B (量化版)、ChatGLM3-6B、Gemma-7b-instruct</li>
+<li>趁着各类大模型混战期间薅到的各种优惠或免费的大模型API，如：<ul>
+<li><a href="%E6%99%BA%E8%B0%B1AI%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0">智谱的API</a>，前些日子GLM4出来时有波99元1.8亿tokens（六个月）的活动，性价比很高了；</li>
+<li><a target="_blank" rel="noopener" href="https://help.aliyun.com/zh/dashscope/developer-reference/api-details">通义的API</a>，多款产品限时免费中，能用多久算多久；</li>
+<li><a target="_blank" rel="noopener" href="https://ai.google.dev/pricing">Gemini 1.5&#x2F;1</a>同样的限免，就是使用起来有一点儿麻烦<br>看得出来，这是一个并不这富裕的个人学习者&#x2F;开发者。先用好手中这副牌吧。</li>
+</ul>
+</li>
+</ul>
+<h1 id="开发环境配置"><a href="#开发环境配置" class="headerlink" title="开发环境配置"></a>开发环境配置</h1><ul>
+<li>安装miniconda及创建虚拟环境，此处按下不表。不过不得不吐槽的是，python各类包是真心强大，但包和版本管理真的是麻烦。</li>
+<li>安装包，主要包括以下几类：<ul>
+<li>主算法框架pytorch；由于习惯使用paddleOCR，因此也安装paddlepaddle框架；</li>
+<li>由于使用模型以transformer框架为主，因此安装transformer相关包（transformer, sentence-transformer, timm等），推理加速工具（accelerate, xformer等）；本地机上配置llama-cpp方便使用cpu推理；</li>
+<li>安装大模型应用开发工具，主要是llama-index和langchain，另外准备向量数据库chroma，方便做向量检索及RAG；</li>
+<li>相关大模型API的调用包；</li>
+<li>其它一些包，如jupyter lab、plot等，方便日常使用；</li>
+</ul>
+</li>
+<li>另外，docker虽然配置和使用容易，但要调试代码，甚至需要魔改一些已有包的时候并不方便，因此尽量确认使用需求后直接在现有环境内安装。</li>
+</ul>
+<h1 id="大模型配置"><a href="#大模型配置" class="headerlink" title="大模型配置"></a>大模型配置</h1><p>由于服务器端资源难以有效保障，colab上的A100&#x2F;40G花费有点高，本地机上又没有显卡，只能多方筹措，拼凑个AI基础服务来：</p>
+<ul>
+<li>高端路线：调用闭源API接口，其中<ul>
+<li>国内使用大语言模型主要走GLM-4和qwen-max-1201；国外测试（偶尔）时使用gemini-pro；</li>
+<li>图文理解用qwen-vl-plus（测试效果很不错，兼具ocr文本理解）；</li>
+</ul>
+</li>
+<li>降级路线：部署开源大模型并提供服务，其中<ul>
+<li>服务器端&#x2F;colab：大语言模型使用qwen-1.5-14b-q4m量化版，图文理解使用miniCPM-v-2b，补充paddleOCR能力\</li>
+<li>本地：加whisper做语音转文本，加bark做文本转语音（考虑替换中），加musicGen做音乐生成（找寻替代品中）、dreamtalk做视频生成（找寻替代品中）<br>基础思路是：调试代码、快速测试思路、厘定应用的可能上限时使用闭源API，自己使用和内部服务时使用开源。</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/03/18/%E6%9D%82%E8%B0%88%E2%80%94%E2%80%94%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%96%B0%E4%B8%80%E8%BD%AEAI%E7%83%AD%E7%9A%84%E6%84%9F%E6%82%9F/" rel="prev" title="杂谈——大模型和新一轮AI热的感悟">
+      <i class="fa fa-chevron-left"></i> 杂谈——大模型和新一轮AI热的感悟
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2024/03/05/%E5%9F%BA%E5%BB%BA%E7%AF%87%E2%80%94%E2%80%94%E4%B8%AA%E4%BA%BA%E9%9D%A2%E5%90%91%E5%BA%94%E7%94%A8%E7%9A%84AI%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/" rel="next" title="基建篇——个人面向应用的AI技术框架">
+      基建篇——个人面向应用的AI技术框架 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%9B%AE%E6%A0%87-%E9%9C%80%E6%B1%82"><span class="nav-number">1.</span> <span class="nav-text">目标 &#x2F; 需求</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%B7%B2%E6%9C%89%E7%9A%84%E8%B5%84%E6%BA%90"><span class="nav-number">2.</span> <span class="nav-text">已有的资源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A1%AC%E4%BB%B6%E8%B5%84%E6%BA%90"><span class="nav-number">2.1.</span> <span class="nav-text">硬件资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E8%B5%84%E6%BA%90"><span class="nav-number">2.2.</span> <span class="nav-text">软件资源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="nav-number">3.</span> <span class="nav-text">开发环境配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E9%85%8D%E7%BD%AE"><span class="nav-number">4.</span> <span class="nav-text">大模型配置</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jiezi</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jiezi</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

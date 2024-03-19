@@ -146,7 +146,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/07/README/">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/19/%E5%9F%BA%E5%BB%BA%E7%AF%87%E2%80%94%E2%80%94vLLM%E6%A8%A1%E5%9E%8B%E9%80%89%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -160,7 +160,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/03/07/README/" class="post-title-link" itemprop="url">Untitled</a>
+            <a href="/2024/03/19/%E5%9F%BA%E5%BB%BA%E7%AF%87%E2%80%94%E2%80%94vLLM%E6%A8%A1%E5%9E%8B%E9%80%89%E7%94%A8/" class="post-title-link" itemprop="url">基建篇--vLLM模型选用</a>
         </h2>
 
         <div class="post-meta">
@@ -169,8 +169,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2024-03-07 23:11:25" itemprop="dateCreated datePublished" datetime="2024-03-07T23:11:25+08:00">2024-03-07</time>
+              <time title="Created: 2024-03-19 22:19:48 / Modified: 22:38:59" itemprop="dateCreated datePublished" datetime="2024-03-19T22:19:48+08:00">2024-03-19</time>
             </span>
 
           
@@ -184,92 +185,70 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <div align="right">
-  Language:
-  🇺🇸
-  <a title="Chinese" href="docs/zh-CN/README.md">🇨🇳</a>
-  <a title="Russian" href="docs/ru/README.md">🇷🇺</a>
-</div>
-
-<h1 id="e-x-T"><a href="#e-x-T" class="headerlink" title=" e x T"></a><div align="center"><a title="NexT website repository" target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next.org"><img align="center" width="56" height="56" src="https://raw.githubusercontent.com/theme-next/hexo-theme-next/master/source/images/logo.svg?sanitize=true"></a> e x T</div></h1><p align="center">
-  «NexT» is a high quality elegant <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a> theme. It is crafted from scratch with love.
-<br>
-<br>
-  <a target="_blank" rel="noopener" href="https://www.npmjs.com/package/hexo-theme-next"><img src="https://img.shields.io/github/package-json/v/theme-next/hexo-theme-next?style=flat-square"></a>
-  <a target="_blank" rel="noopener" href="https://nodejs.org"><img src="https://img.shields.io/badge/node-%3E=10.9.0-green?style=flat-square"></a>
-  <a target="_blank" rel="noopener" href="https://hexo.io"><img src="https://img.shields.io/badge/hexo-%3E=4.0.0-blue?style=flat-square&logo=hexo"></a>
-  <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/LICENSE.md"><img src="https://img.shields.io/badge/license-%20AGPL-orange?style=flat-square&logo=gnu"></a>
-<br>
-  <a target="_blank" rel="noopener" href="https://bestpractices.coreinfrastructure.org/projects/2625"><img src="https://img.shields.io/cii/level/2625?style=flat-square" title="Core Infrastructure Initiative Best Practices"></a>
-  <a target="_blank" rel="noopener" href="https://travis-ci.org/theme-next/hexo-theme-next?branch=master"><img src="https://img.shields.io/travis/theme-next/hexo-theme-next/master?style=flat-square&logo=travis%20ci" title="Travis CI [Linux]"></a>
-  <a target="_blank" rel="noopener" href="https://app.codacy.com/manual/theme-next/hexo-theme-next/dashboard"><img src="https://img.shields.io/codacy/grade/72f7fe7609c2438a92069f448e5a341a/master?style=flat-square&logo=codacy" title="Project Grade"></a>
-  <img src="https://img.shields.io/snyk/vulnerabilities/github/theme-next/hexo-theme-next?style=flat-square" title="Vulnerabilities">
-<br>
-  <img src="https://user-images.githubusercontent.com/16272760/63487983-da41b080-c4df-11e9-951c-64883a8a5e9b.png">
-</p>
-
-<h2 id="Live-Preview"><a href="#Live-Preview" class="headerlink" title="Live Preview"></a>Live Preview</h2><p align="center">
-  💟 <a target="_blank" rel="noopener" href="https://muse.theme-next.org">Muse</a> | 🔯 <a target="_blank" rel="noopener" href="https://mist.theme-next.org">Mist</a> | ♓️ <a target="_blank" rel="noopener" href="https://pisces.theme-next.org">Pisces</a> | ♊️ <a target="_blank" rel="noopener" href="https://theme-next.org">Gemini</a>
-<br>
-<br>
-  More «NexT» examples <a target="_blank" rel="noopener" href="https://github.com/theme-next/awesome-next#live-preview">here</a>.
-</p>
-
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>The simplest way to install is to clone the entire repository:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
-
-<p>Or you can see <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md">detailed installation instructions</a> if you want any other variant.</p>
-<h2 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h2><p>NexT supports a large number of third-party plugins, which can be easily configured.</p>
-<p>For example, if you want to enable <code>pjax</code> on your site, just set <code>pjax</code> to <code>true</code> in NexT config file:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Easily enable fast Ajax navigation on your website.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pjax</span></span><br><span class="line"><span class="attr">pjax:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-<p>Then visit the «Dependencies» link to get the installation instructions of this module.</p>
-<h3 id="Configure-CDN"><a href="#Configure-CDN" class="headerlink" title="Configure CDN"></a>Configure CDN</h3><p>If you want to specify a CDN link for any plugins, you need to set &#x2F; update the CDN link.</p>
-<p>For example, if you want to use <code>mediumzoom</code> and load the plugin via CDN, go to NexT config and see:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">vendors:</span></span><br><span class="line">  <span class="comment"># ...</span></span><br><span class="line">  <span class="comment"># Some contents...</span></span><br><span class="line">  <span class="comment"># ...</span></span><br><span class="line">  <span class="attr">mediumzoom:</span> <span class="comment"># Set or update mediumzoom CDN URL.</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Update"><a href="#Update" class="headerlink" title="Update"></a>Update</h2><p>NexT releases new versions every month. You can update to latest master branch by the following command:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git pull</span><br></pre></td></tr></table></figure>
-
-<p>And if you see any error message during update (something like <strong>«Commit your changes or stash them before you can merge»</strong>), recommended to learn <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/DATA-FILES.md">Hexo data files</a> feature.<br>However, you can bypass update errors by using the <code>Commit</code>, <code>Stash</code> or <code>Reset</code> commands for local changes. See <a target="_blank" rel="noopener" href="https://stackoverflow.com/a/15745424/5861495">here</a> how to do it.</p>
-<p><strong>If you want to update from v5.1.x to the latest version, read <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/UPDATE-FROM-5.1.X.md">this</a>.</strong></p>
-<h2 id="Feedback"><a href="#Feedback" class="headerlink" title="Feedback"></a>Feedback</h2><ul>
-<li>Visit the <a target="_blank" rel="noopener" href="https://github.com/theme-next/awesome-next">Awesome NexT</a> list to share plugins and tutorials with other users.</li>
-<li>Join our <a target="_blank" rel="noopener" href="https://t.me/theme_next">Telegram</a> &#x2F; <a target="_blank" rel="noopener" href="https://gitter.im/theme-next">Gitter</a> &#x2F; <a target="_blank" rel="noopener" href="https://riot.im/app/#/room/#theme-next:matrix.org">Riot</a> chats.</li>
-<li><a target="_blank" rel="noopener" href="https://i18n.theme-next.org/">Add or improve translation</a> in few seconds.</li>
-<li>Report a bug in <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/issues/new?assignees=&labels=Bug&template=bug-report.md">GitHub Issues</a>.</li>
-<li>Request a new feature on <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/issues/new?assignees=&labels=Feature+Request&template=feature-request.md">GitHub</a>.</li>
-<li>Vote for <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/issues?q=is:open+is:issue+label:%22Feature+Request%22">popular feature requests</a>.</li>
+          <blockquote>
+<p>‘Tell me and I forget. Teach me and I remember. Involve me and I learn.’ <em>from Benjamin Franklin</em></p>
+</blockquote>
+<h1 id="基建篇–vLLM模型选用"><a href="#基建篇–vLLM模型选用" class="headerlink" title="基建篇–vLLM模型选用"></a>基建篇–vLLM模型选用</h1><p>在 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/686736537">基建篇–AI应用技术框架</a>中提到, 图文理解模型将作为一种基础服务, 以工具的形式供调用, 从而提升AI服务的交互体验. 本文进一步测试和探讨近期(截止2024.03.17)的几个不错的较小规模的vLLM模型, 包括<a target="_blank" rel="noopener" href="https://github.com/deepseek-ai/DeepSeek-VL">deepseek-vl-7b</a>, <a target="_blank" rel="noopener" href="https://github.com/OpenBMB/MiniCPM">miniCPM-V-3B</a>, <a target="_blank" rel="noopener" href="https://github.com/OpenBMB/OmniLMM">OmniLMM-12B</a>等，分析相关论文, 评测并选用.</p>
+<p><strong>结论先行:</strong> 通过实例测试, 查阅相关文献, 比较训练\推理支持度上(主要更侧重推理), 最终选用了deepseek-vl-7b-chat模型, 我认为它是这个尺寸最好的模型(之一), 功能丰富, 堪称”小钢炮”. 以下将以该模型为主, 对照其它模型分析与评估.</p>
+<p><strong>pros:</strong></p>
+<ul>
+<li>各项图文理解任务综合能力较强, 没有太显著的短板；</li>
+<li>对复杂图文和图文结合理解较好, 超出其它模型表现；能够同时支持中英文；</li>
+<li>支持多图交叉分析, 除精细的差别对比外, 在常规跨图分析上能有效支持；</li>
+<li>有论文支持, 让人比较放心, 论文显示总体的语料选用和训练过程比较solid.<br><strong>cons:</strong></li>
+<li>图片中有中文文本时, 反馈内容上幻觉很严重；需要与外部OCR配合使用.</li>
+<li>使用的LLM在同规格下中规中矩，算不上顶尖</li>
+<li>略显得有一点多舌(over talktive)</li>
+<li>暂未支持进一压缩, 如int8&#x2F;int4数据格式， 或awq&#x2F;gtpq&#x2F;gguf等量化部署</li>
 </ul>
-<h2 id="Contributing"><a href="#Contributing" class="headerlink" title="Contributing"></a>Contributing</h2><p>We welcome you to join the development of NexT. Please see <a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/blob/master/.github/CONTRIBUTING.md">contributing document</a>. 🤗</p>
-<p>Also, we welcome Issue or PR to our <a target="_blank" rel="noopener" href="https://github.com/theme-next">official-plugins</a>.</p>
-<h2 id="Contributors"><a href="#Contributors" class="headerlink" title="Contributors"></a>Contributors</h2><p><a target="_blank" rel="noopener" href="https://github.com/theme-next/hexo-theme-next/graphs/contributors"><img src="https://opencollective.com/theme-next/contributors.svg?width=890"></a></p>
-<h2 id="Thanks"><a href="#Thanks" class="headerlink" title="Thanks"></a>Thanks</h2><p align="center">
-  «NexT» send special thanks to these great services that sponsor our core infrastructure:
-<br>
-<br>
-  <a target="_blank" rel="noopener" href="https://github.com"><img align="center" width="100" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png"></a>
-  &nbsp;&nbsp;&nbsp;
-  <a target="_blank" rel="noopener" href="https://www.netlify.com"><img align="center" width="150" src="https://cdn.netlify.com/15ecf59b59c9d04b88097c6b5d2c7e8a7d1302d0/1b6d6/img/press/logos/full-logo-light.svg"></a>
-<br>
-<br>
-  <sub>GitHub allows us to host the Git repository, Netlify allows us to distribute the documentation.</sub>
-<br>
-<br>
-  <a target="_blank" rel="noopener" href="https://crowdin.com"><img align="center" width="180" src="https://support.crowdin.com/assets/logos/crowdin-logo1-small.png"></a>
-<br>
-<br>
-  <sub>Crowdin allows us to translate conveniently the documentation.</sub>
-<br>
-<br>
-  <a target="_blank" rel="noopener" href="https://codacy.com"><img align="center" width="155" src="https://user-images.githubusercontent.com/16944225/55026017-623f8f00-5002-11e9-88bf-0d6a5884c6c2.png"></a>
-  &nbsp;&nbsp;&nbsp;
-  <a target="_blank" rel="noopener" href="https://travis-ci.com"><img align="center" width="140" src="https://raw.githubusercontent.com/travis-ci/travis-web/master/public/images/logos/TravisCI-Full-Color.png"></a>
-<br>
-<br>
-  <sub>Codacy allows us to monitor code quality, Travis CI allows us to run the test suite.</sub>
-</p>
-
+<h2 id="模型部署"><a href="#模型部署" class="headerlink" title="模型部署"></a>模型部署</h2><p>deepseek-vl模型的部署并不困难, 参照<a target="_blank" rel="noopener" href="https://github.com/deepseek-ai/DeepSeek-VL">它的github</a>上步骤即可完成. 有几点值得留意的地方:</p>
+<ul>
+<li>已知: serve文件夹下inference.py展示了模型可支持streaming调用</li>
+<li>已知: 测试中发现模型支持多图片对比, 传参方式如下:<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data = <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;img_query&quot;</span><span class="punctuation">:</span> <span class="string">&quot;第一张图片 &lt;image_placeholder&gt; 和第二张图片 &lt;image_placeholder&gt; 的主要区别是什么？哪一张更好？&quot;</span><span class="punctuation">,</span> # 确保占位符&lt;image_placeholder&gt;与图片一一对应 </span><br><span class="line">    <span class="attr">&quot;img_path_lst&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="string">&quot;/home/taohong/server/tmp/female_01.png&quot;</span><span class="punctuation">,</span> </span><br><span class="line">                     <span class="string">&quot;/home/taohong/server/tmp/female_02.png&quot;</span><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure></li>
+<li>待确认: 从代码看来, 同时模型可支持以batch的形式传图片做分析, 但此处暂未尝试 (由于我的需求是将vLLM作为服务部署, 本地机器性能有限, 暂无需批量化), 后续如有机会再分析<br>部署下来, 加载模型占用约16GB, 正常推理中总计约占用18-20Gb, 要能压缩下精度就更好了. 我使用Fast-API做了封装, 提供正常调用\streaming调用\多图文交叉理解.</li>
+</ul>
+<h2 id="论文学习"><a href="#论文学习" class="headerlink" title="论文学习"></a>论文学习</h2><p>个人筛选vLLM的逻辑是, 在效果差别不大的情况下:</p>
+<ul>
+<li>有论文的 &gt; 没有论文的</li>
+<li>从pre-train做起的(除LLM外) &gt; SFT的 &gt; Lora的</li>
+<li>有精细数据选用与处理的, 有自有数据的 &gt; 直接使用网络通用数据的<br>回到<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2403.05525.pdf">论文&#x2F;模型报告</a>上来, 我主要关注的点也在于:</li>
+<li>模型如何筛选和处理数据? – 重点关注</li>
+<li>模型架构和训练过程有什么特点? – 较关注, 主要是目前主要vLLM架构差别不太大</li>
+<li>模型评估效果如何? – 了解即可</li>
+</ul>
+<p><strong>引言中,</strong> 论文指出, 当前一些开源的vLLM模型表现不佳, 可能原因是: 一来这些模型主要在做instruction tuning, 而忽视了(或没有资源)对pre-training阶段应有的重视； 二是使用的数据集趋同(网络数据集&#x2F;学术上用数据集), 往往与现实世界有一定的距离；三是部分模型在训练中可能出现LLM模型能力退化, 导致图文联合理解能力下降. 以上三点, 我觉得还是蛮切要的.</p>
+<p><strong>数据上,</strong> 论文指出在pretraining阶段使用的数据包括了web screenshots, PDFs, OCR, charts, and knowledge-based content (expertise, textbooks)等在内的各种类型, 这一点在后来测试中体现在deepseek模型更”多才多艺”上；在instruction-tuning上模型使用了来自于GPT-4V和Gemini的测试用例, 这点算是惯用做法.<br><img src="https://pic3.zhimg.com/80/v2-f66487673e68e590634951a33173f9d2_1440w.webp" alt="pre-training中使用的数据，还是非常solid的"></p>
+<p><strong>架构上,</strong> 在图片部分使用了encoder (图片转向量) + adaptor (转变为向量的图片转文字 ), 再结合原pair中的文本进入LLM中, 总体上和常见的vLLM一致. 具体而言:</p>
+<ul>
+<li>encoder:<ul>
+<li>使用了hybrid vision encoder, 除常用于图像语义表征的SigLIP外, 引入图像专门的自监督编码器SAM-B以保留更多图像信息</li>
+<li>为实现对更大尺寸图片的支持(从384<em>384到1024</em>1024), 原则上可以支持更全面和更精细的理解, 当然与之而来的是计算复杂度提升. 模型相应做了一些技术上的创新, 不过我以这块无感, 暂不细探.</li>
+</ul>
+</li>
+<li>adaptor:<ul>
+<li>直接使用2层的MLP, 未做更多说明</li>
+</ul>
+</li>
+<li>LLM:<ul>
+<li>基座使用了DeepSeek LLM (7B), 查阅<a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2401.02954.pdf">其技术报告</a>, 该模型在打榜表现上还是逊色于同尺寸的qwen-1.5-7b及chatGLM3-6B的, 处于中间水平.</li>
+</ul>
+</li>
+</ul>
+<p><strong>训练上,</strong> 采取的还是典型的逐步训练.<br><img src="https://pic1.zhimg.com/80/v2-351439c545887d9ed44108478333a058_1440w.webp" alt="采用比较经典的训练三步训练方式"></p>
+<ul>
+<li>先固定encoder和llm, 训练adaptor将图片encoding结果表达为更易为LLM理解的能力；</li>
+<li>接下来, 只固定encoder, 同时优化adaptor和LLM. 由于图片信息在encoder后已比较充分, 而文本信息相对较难学习, 直接混合的多模态信息容出现模型的语言能力退化问题. 本文采取的策略是, 精心控制文本数据占总体的比例, 并使用了一种warm-up的策略来逐步引入vision-language语料的比例. 这一点蛮有创新的, 而且符合能够和直观的认知一致, 我认为是蛮好的创新.</li>
+<li>再就是认证训练中的scaling了</li>
+<li>最后是使用数据,对encoder, LLM和adaptor进行sft, 主要目的是提升chat的适应能力和指令跟随能力, 仍使用多模态数据+对话文本数据(单独针对LLM)<br><img src="https://picx.zhimg.com/80/v2-c44258fe3ce6098b52ba8c8a9fdb3235_1440w.png?source=d16d100b" alt="SFT阶段使用的数据，特别注意不同数据的构成比例"></li>
+</ul>
+<h2 id="效果测试"><a href="#效果测试" class="headerlink" title="效果测试"></a>效果测试</h2><p>对模型报告中的一些测试用例印象深刻, 我看到其实各家报告或github上都会有一些案例，其实这些案例蛮有特色的，也很能反映vLLM的能力，因此在这里，我和首先将不同vLLM报告中的样例拿出来，以彼家之矛，攻他家之盾，做一个交叉的测试</p>
+<h3 id="交叉测试"><a href="#交叉测试" class="headerlink" title="交叉测试"></a>交叉测试</h3><p><strong>测试一: scratch流程图转python code，</strong>参见报告p.30<br>说实话，初次看到这个我还是有点震惊的，测试中我选用了另一个更复杂一些的，如下图所示：<br><img src="https://picx.zhimg.com/80/v2-aef21989a94b80f1ba6664c3fc2ba534_1440w.png?source=d16d100b" alt="尝试理解Scrach流程图并编写python代码"><br>测试中deepseek-vl-7b理解正确，编程基本OK（可能受限于LLM能力）；OmniLMM-12B与之相仿；miniCPM-V大概理解，但无法编程。</p>
+<p><strong>测试二：复杂的可视化数据图</strong><br>选用了一张比测试案例更复杂的可视化数据图，类似报告中p.14 figure4，三个模型表现都不理想，一方面对于关键信息，如横纵坐标、标题的识别不够准确，另一方面不能全面覆盖重要的信息，都没能达到可用的地步。</p>
+<p><strong>测试三：按图片写诗，表格截图复原，原神角色识别，即报告p.32项</strong><br>由于这几个使用deepseek报告中的原始案例，因此主要测试OmniLMM-12B和miniCPM-V的表现。其中根据图片写诗上后两者表现不佳，怀疑一方面是二者针对中文语料训练不足，另一方面是可能训练中出现也LLM的能力“退化”，导致图文结合不好。原神角色OmniLMM-12B有误判，可能仍是中文语料不足的问题。表格截图复原三者都没能做到完全精准，其实也不能让人放心使用，看来涉及OCR的还是得更专业的工具来。<br><img src="https://picx.zhimg.com/80/v2-60a50132f1e55afab0a442b2d370b61e_1440w.png?source=d16d100b" alt="根据图片写诗"><br><img src="https://pic1.zhimg.com/80/v2-b6e0d5c4f6909ed2d47a9476a72081f6_1440w.png?source=d16d100b" alt="表格截图识别"><br><img src="https://pic1.zhimg.com/80/v2-ecc451ff913fe9c3eca25672f3f11184_1440w.png?source=d16d100b" alt="原神游戏识别"></p>
+<p><strong>测试三：针对[OmniLMM-12B的Github](GitHub - OpenBMB&#x2F;OmniLMM: Large Multi-modal Models for Strong Performance and Efficient Deployment)上的案例进行测试</strong><br><img src="https://picx.zhimg.com/80/v2-6b6117eec559a21c2f3627e0d7551b32_1440w.png?source=d16d100b" alt="来自OmniLMM的测试案例"><br>同样是极富挑战的几张图文理解。其中坡面图deepseek理解正确，miniCPM-V尚可；狗图deepseek理解尚可，miniCPM-V完全不理解；拍照图deepseek误认为是天坛，miniCPM-V只识别为公园；二人图deepseek和miniCPM-V都识别为一个人。</p>
+<p><strong>总结来看，deepseek在8个案例中显著出错或明显弱于其它2个模型的情况最少。</strong></p>
+<h3 id="其它测试例子"><a href="#其它测试例子" class="headerlink" title="其它测试例子"></a>其它测试例子</h3><p><strong>测试四：含有复杂中文的图片理解</strong><br>直接上含有中文的微信对话截图，问有几个人、对话内容，猜测对话的背景。三者都完全跑题，出现了严重幻觉。这类文本识别，还是要加OCR配合coordinates喂给vLLM才行。话说Qwen-VL-plus和max的API测试发现对于含有中文文本的图片理解非常好，是本身训练使用vLLM具备了很强的OCR能力，还是作为集成方案添加了外部OCR工具呢？</p>
+<p><strong>测试五：复杂图文结合的语义理解</strong><br>测试例子如下，询问what is on the image? what kind of emotion it conveys?<br><img src="https://pic1.zhimg.com/80/v2-985d20a3cdea0afc8c15ba6b50dd1e05_1440w.png?source=d16d100b" alt="挑战图文结合的理解能力"><br>三个模型表现都还不错，都能够理解背后的情感，blue的含义，其中deepseek将文字的理解代入图片景物的理解，稍胜一筹。</p>
 
       
     </div>
@@ -289,7 +268,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/07/Welcome-to-My-Blog/">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/18/%E5%BA%94%E7%94%A8%E7%AF%87%E2%80%94%E2%80%94%E4%BA%BA%E6%A0%BC%E5%8C%96AI%EF%BC%9A%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%88%86%E6%9E%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -303,7 +282,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/03/07/Welcome-to-My-Blog/" class="post-title-link" itemprop="url">Welcome to My Blog!</a>
+            <a href="/2024/03/18/%E5%BA%94%E7%94%A8%E7%AF%87%E2%80%94%E2%80%94%E4%BA%BA%E6%A0%BC%E5%8C%96AI%EF%BC%9A%E7%A0%94%E7%A9%B6%E4%B8%8E%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">应用篇——人格化AI：研究与分析</a>
         </h2>
 
         <div class="post-meta">
@@ -313,7 +292,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2024-03-07 23:07:05" itemprop="dateCreated datePublished" datetime="2024-03-07T23:07:05+08:00">2024-03-07</time>
+              <time title="Created: 2024-03-18 21:52:28" itemprop="dateCreated datePublished" datetime="2024-03-18T21:52:28+08:00">2024-03-18</time>
             </span>
 
           
@@ -346,7 +325,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/06/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/08/%E7%95%AA%E5%A4%96%E7%AF%87%E2%80%94%E2%80%94%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -360,7 +339,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/03/06/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+            <a href="/2024/03/08/%E7%95%AA%E5%A4%96%E7%AF%87%E2%80%94%E2%80%94%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="post-title-link" itemprop="url">番外篇之博客搭建</a>
         </h2>
 
         <div class="post-meta">
@@ -370,8 +349,15 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2024-03-06 10:26:55" itemprop="dateCreated datePublished" datetime="2024-03-06T10:26:55+08:00">2024-03-06</time>
+              <time title="Created: 2024-03-08 23:18:54" itemprop="dateCreated datePublished" datetime="2024-03-08T23:18:54+08:00">2024-03-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-03-19 22:39:12" itemprop="dateModified" datetime="2024-03-19T22:39:12+08:00">2024-03-19</time>
+              </span>
 
           
 
@@ -384,19 +370,301 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          
+      
+    </div>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/05/%E5%9F%BA%E5%BB%BA%E7%AF%87%E2%80%94%E2%80%94%E4%B8%AA%E4%BA%BA%E9%9D%A2%E5%90%91%E5%BA%94%E7%94%A8%E7%9A%84AI%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jiezi">
+      <meta itemprop="description" content="">
+    </span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiezi4AI's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/05/%E5%9F%BA%E5%BB%BA%E7%AF%87%E2%80%94%E2%80%94%E4%B8%AA%E4%BA%BA%E9%9D%A2%E5%90%91%E5%BA%94%E7%94%A8%E7%9A%84AI%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/" class="post-title-link" itemprop="url">基建篇——个人面向应用的AI技术框架</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-03-05 09:28:34" itemprop="dateCreated datePublished" datetime="2024-03-05T09:28:34+08:00">2024-03-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-03-19 22:39:10" itemprop="dateModified" datetime="2024-03-19T22:39:10+08:00">2024-03-19</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>＞ “Exploration is in our nature. We began as wanderers, and we are wanderers still.” <em>from Karl Sagan</em><br>沿续AI大炼钢铁之环境准备一文, 个人探索以AI应用为主, 在此目标下, 拟储备的技术能力框架如下:<br><img src="https://pic4.zhimg.com/80/v2-32e47cab1f89acaa174c76aa58242683_1440w.webp" alt="面向应用的AI技术框架"></p>
+<h1 id="基础层"><a href="#基础层" class="headerlink" title="基础层"></a>基础层</h1><p>主要是使用已有的AI大模型及相关服务, 支持上层的应用. 这一层的模型(如本地部署)拟使用fast-api做成服务, 用Pydantic规范输入&#x2F;输出格式, 并尽量封装成统一格式(如LLM产出结果封闭成OpenAI的格式).</p>
+<h2 id="大语言模型"><a href="#大语言模型" class="headerlink" title="大语言模型"></a>大语言模型</h2><p>拟使用以下两类:</p>
+<ol>
+<li>闭源LLM API, 主要就是国外的GPT-4&#x2F;ChatGPT 3.5&#x2F;Gemini, 国内的智谱&#x2F;通义千问等, 月之暗影据说不错, 看价格也比较合适, 后期也可测试.</li>
+<li>开源LLM, 主要是穷人三宝的chatGLM3-6b, Qwen1.5-14B, Gemma-7B-instruct, 其余待定.<br>大语言模型扮演的是整个AI应用的大脑, 是思考与指令中心, 直接攸关应用的效果. 在开发和服务中, 我的想法是:</li>
+</ol>
+<ul>
+<li>由于闭源LLM封装较好, 适配度较高, 可用于快速的代码开发与功能搭建；</li>
+<li>此外, 当前看来闭源LLM能力更强, 适合跑一些用例, 作为开源LLM下优化的benchmark；</li>
+<li>一些复杂的问题或任务, 如涉及工具调用, 复杂任务的拆解与规划, 生成内容的安全防控与排查上, 应用闭源LLM更优.</li>
+</ul>
+<p>而应用开源LLM, 主要的考虑是成本较低, 适用于做反复的调试和部署服务(承载能力另说), 另一方面是给未来留下一些灵活性的空间, 如未来能够获取更多的领域数据可以做SFT, 或instruct-tuning以生成特定风格&#x2F;格式的结果.</p>
+<p>如上, 实际中有闭源LLM和开源LLM混合使用的情况, 有必要设置一些规则条件, 方便不同场景和需求下切换底层的LLM. 当然一种更好的思路是能够自动地按需切换LLM服务, 实现成本优化和效率提升, 这里OpenRoute提供了一个可能的示例.</p>
+<h2 id="多模态大模型"><a href="#多模态大模型" class="headerlink" title="多模态大模型"></a>多模态大模型</h2><p>2024年看来是多模态大模型的爆发一年. 我将多模态视为AI应用的感官能力, 主要提升交互体验. 关注的类型有:</p>
+<ul>
+<li>图文理解: 对用户上传的手机截图\图片\画像等识别和理解. 测试下来, 闭源的<a href="%E8%AE%A1%E9%87%8F%E8%AE%A1%E8%B4%B9_%E6%A8%A1%E5%9E%8B%E6%9C%8D%E5%8A%A1%E7%81%B5%E7%A7%AF(DashScope)-%E9%98%BF%E9%87%8C%E4%BA%91%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%BF%83">qwen-vl-plus&#x2F;max</a>表现优秀, 在中文相关场景上优于gpt4-v；开源暂使用miniCPM-v, 计划进一步测试[deepseek-vl](GitHub - deepseek-ai&#x2F;DeepSeek-VL: DeepSeek-VL: Towards Real-World Vision-Language Understanding);</li>
+<li>文本-语音生成: 在asr上目前看来<a target="_blank" rel="noopener" href="https://github.com/openai/whisper">whisper</a>还是较好的选择, 在text-to-speech上已测试<a target="_blank" rel="noopener" href="https://github.com/suno-ai/bark">bark</a>, 但中文生成较差, 也不支持voice cloning, 可玩性差一点. 另外在尝试列中的还有: <a target="_blank" rel="noopener" href="https://github.com/RVC-Boss/GPT-SoVITS">GPT-SoVITS</a> [coqui-ai&#x2F;TTS](GitHub - coqui-ai&#x2F;TTS: - a deep learning toolkit for Text-to-Speech, battle-tested in research and production) [CorentinJ&#x2F;Real-Time-Voice-Cloning](GitHub - CorentinJ&#x2F;Real-Time-Voice-Cloning: Clone a voice in 5 seconds to generate arbitrary speech in real-time)</li>
+<li>文本-图片生成: 同样的, 质量要求高一点的场景用stable diffusion, <a target="_blank" rel="noopener" href="https://github.com/PixArt-alpha/PixArt-sigma">PixArt-sigma</a>号称有惊喜, 静待开源</li>
+<li>视频生成: Sora或其它复杂的文本-视频生成的大模型暂不涉猎, 主要是考虑到有人-机交互中, 需要一些人物说话的视频, 传说中的<a target="_blank" rel="noopener" href="https://github.com/HumanAIGC/EMO">EMO (Emote Portrait Alive)</a>没开源的意思,因此主要使用降级版的<a target="_blank" rel="noopener" href="https://github.com/ali-vilab/dreamtalk">DreamTalk</a>, 效果一般.</li>
+</ul>
+<h2 id="Embedding模型"><a href="#Embedding模型" class="headerlink" title="Embedding模型"></a>Embedding模型</h2><p>不再赘述, 主要是为了支持RAG, 或部分多模态大模型中用到.</p>
+<h1 id="中间层"><a href="#中间层" class="headerlink" title="中间层"></a>中间层</h1><p>用于辅助AI应用开发落地的工具和框架, 聚焦以下几种:</p>
+<h2 id="Langchain–应用pipeline构建-多面手"><a href="#Langchain–应用pipeline构建-多面手" class="headerlink" title="Langchain–应用pipeline构建, 多面手"></a>Langchain–应用pipeline构建, 多面手</h2><p>去年的时候工作中使用过, 当时觉得它在设计上有些繁复, 需要遵循它的一套框架和方法, 要为特定需求(当时是rag)服务时改动工作较重. 但自0.1.10版本后, 看起来langchain更加强大了, 考虑再重新学习和使用它, 主要的原因是:</p>
+<ul>
+<li>打通构建AI应用pipeline的各个环节, 虽然可能还会有许多需要魔改代码的时候, 但它封装一些具体实现步骤(特别像parser这种步骤), 确实能省下不少功夫；</li>
+<li>扩展性很强, 构建LLM应用的各个元素如各种llm\工具\API\分析框架几乎都支持, 特别适合打造”缝合怪”式的应用；</li>
+<li>从开发到生产, 之前LLM应用(如agent应用)为人诟病的往往是生产环境中的有效性\鲁棒性, Langchain增强LangSmith和LangServe加强了其监控\分析\部署服务的能力. 虽然还没有体验, 但我觉得思路很对, 在同类中属于优先布局.</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://python.langchain.com/docs/get_started/introduction">LangChain框架图</a></p>
+<h2 id="LlamaIndex–优良的RAG范式"><a href="#LlamaIndex–优良的RAG范式" class="headerlink" title="LlamaIndex–优良的RAG范式"></a>LlamaIndex–优良的RAG范式</h2><p>认识llamaindex是在今年初的一项工作中, 发现自己辛辛苦苦写出的代码, 从数据读取\embedding\RAG各种处理,洋洋洒洒几千行代码, 效果反而不如使用LlamIndex后简单的几行代码. 在RAG上, 我觉得完全可以将LlamaIndex作为范式来用.</p>
+<p>虽然LlamaIndex也提供了工具使用和Agent等功能, 我做过一些测试, 总体感觉是如果需求较直接, 就是围绕RAG还一些互联网检索\外部API检索与分析的需求, LlamaIndex也能承接, 但更复杂的应用还是使用LangChain可以更灵活一些, 毕竟二者(Langchain和LlamaIndex)的交互也很方便(如将LlamaIndex的RAG做成Langchain的检索agent).</p>
+<h2 id="Chroma"><a href="#Chroma" class="headerlink" title="Chroma"></a>Chroma</h2><p>向量化数据库, 只是嵌入在langchain或llamaindex中使用, 其它所知不多, 不在此展开.</p>
+<h1 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h1><p>在应用层, 重点想探索的几个方向是: 人格化AI, 多agent交互与协作, RAG. 其中RAG我认为LlamaIndex已经集成了一些最新的方法和工具, 是较佳的范式, 暂无须再深入. 对人格化AI和多Agent交互与协作我个人很感兴趣, 二者相较, agent已经有大量的研究和应用了, 探索方向也逐渐明确；对人格化AI, 我所关心的问题是:</p>
+<ul>
+<li>Q: 是否应当提倡&#x2F;设计人格化AI? 背后的哲学思考是什么?</li>
+<li>Q: 如何持续稳定地使AI表现出人格化特质？</li>
+<li>Q: 人格化AI可以提升用户体验，使得交互过程更有趣，但在持续多轮交互中，该种特质越来越模糊，给用户的刺激越来越小。因此，在刚开始的“好玩”过去之后，真正支持用户留存下来的是什么？</li>
+<li>Q: 多人物角色合作与协同应当如何实现？（直接创造多个AI角色？还是类似于多AI Agent的演进协同？）</li>
+<li>Q: 大模型的personality特质，会怎样影响大模型的behavior（不止是问答，可评估在工具使用、思考与分析上的差别）<br>关于应用层的这几个话题, 我将跟进相关研究, 做一些自己的尝试. 后面再单独行文展开.</li>
+</ul>
+<h1 id="交互层"><a href="#交互层" class="headerlink" title="交互层"></a>交互层</h1><p>这一块我是苦手, 打算和团队&#x2F;他人合作, 主要探索的形式有:</p>
+<ul>
+<li>独立的交互, 通过<a target="_blank" rel="noopener" href="https://github.com/gradio-app/gradio">gradio</a>和<a target="_blank" rel="noopener" href="https://github.com/streamlit/streamlit">steamlit</a>实现；</li>
+<li>借助于已有的生态, 做快速的上线, 类似openAI的gpts, 主要是国内的如[字节的扣子](Coze: Next-Gen AI Chatbot Developing Platform), 其它如通义&#x2F;智谱的AI agent商店等.</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2024/03/01/AI%E7%82%BC%E4%B8%B9%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jiezi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiezi4AI's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/03/01/AI%E7%82%BC%E4%B8%B9%E4%B9%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/" class="post-title-link" itemprop="url">AI炼丹之环境配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-03-01 22:33:25" itemprop="dateCreated datePublished" datetime="2024-03-01T22:33:25+08:00">2024-03-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-03-19 22:39:13" itemprop="dateModified" datetime="2024-03-19T22:39:13+08:00">2024-03-19</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>＞ “New thins never frighten me, they only thrill me.” <em>from John Glenn</em><br><img src="https://pic1.zhimg.com/v2-8db934972fe6ae6ac57cef785c853390_b.jpg" alt="Future world of Human and AI"><br>眼见这波AI浪潮甚猛烈，工作之外，给自己配置一个“炼丹炉”，闲睱之余也能做一点儿AI开发与应用的小尝试。</p>
+<h1 id="目标-需求"><a href="#目标-需求" class="headerlink" title="目标 &#x2F; 需求"></a>目标 &#x2F; 需求</h1><p>主要聚集于AI的下游应用，同时关注试用不同的大模型及AI产品，具体包括：</p>
+<ul>
+<li>应用工具框架做大模型应用的开发尝试，主要使用langchain、llamaindex等工具，拟尝试RAG、Agent等在特定场景的应用；</li>
+<li>测试和使用各类开源（以HuggingFace的transformer类为主）和闭源（主要是一些提供API服务）和大模型；</li>
+<li>就一些读到的paper或想法做算法实现。<br>因为自己日常也在做大模型相关的工作，因此，上述主要从兴趣出发，做轻量级（非底层的基础）、开发为主（暂不考虑过多部署及优化）、重算法和应用。</li>
+</ul>
+<h1 id="已有的资源"><a href="#已有的资源" class="headerlink" title="已有的资源"></a>已有的资源</h1><p>“工欲成其事，必先利其器”，盘点一下自己手中有哪些可用的资源。</p>
+<h2 id="硬件资源"><a href="#硬件资源" class="headerlink" title="硬件资源"></a>硬件资源</h2><ul>
+<li>服务器：２台合用的服务器，一个有40G的A6000显卡，另一个是24G的显卡，仅有限可用；</li>
+<li>Google Colab：每个月200计算时的<a target="_blank" rel="noopener" href="https://colab.research.google.com/">Google Colab</a>，性价比很高，可以跑一些开源的较小规模的大模型，也可以开发代码；</li>
+<li>本地机：无显卡，主要做代码开发；</li>
+</ul>
+<h2 id="软件资源"><a href="#软件资源" class="headerlink" title="软件资源"></a>软件资源</h2><ul>
+<li>开源大语言模型上主要靠穷人三宝：Qwen1.5-14B (量化版)、ChatGLM3-6B、Gemma-7b-instruct</li>
+<li>趁着各类大模型混战期间薅到的各种优惠或免费的大模型API，如：<ul>
+<li><a href="%E6%99%BA%E8%B0%B1AI%E5%BC%80%E6%94%BE%E5%B9%B3%E5%8F%B0">智谱的API</a>，前些日子GLM4出来时有波99元1.8亿tokens（六个月）的活动，性价比很高了；</li>
+<li><a target="_blank" rel="noopener" href="https://help.aliyun.com/zh/dashscope/developer-reference/api-details">通义的API</a>，多款产品限时免费中，能用多久算多久；</li>
+<li><a target="_blank" rel="noopener" href="https://ai.google.dev/pricing">Gemini 1.5&#x2F;1</a>同样的限免，就是使用起来有一点儿麻烦<br>看得出来，这是一个并不这富裕的个人学习者&#x2F;开发者。先用好手中这副牌吧。</li>
+</ul>
+</li>
+</ul>
+<h1 id="开发环境配置"><a href="#开发环境配置" class="headerlink" title="开发环境配置"></a>开发环境配置</h1><ul>
+<li>安装miniconda及创建虚拟环境，此处按下不表。不过不得不吐槽的是，python各类包是真心强大，但包和版本管理真的是麻烦。</li>
+<li>安装包，主要包括以下几类：<ul>
+<li>主算法框架pytorch；由于习惯使用paddleOCR，因此也安装paddlepaddle框架；</li>
+<li>由于使用模型以transformer框架为主，因此安装transformer相关包（transformer, sentence-transformer, timm等），推理加速工具（accelerate, xformer等）；本地机上配置llama-cpp方便使用cpu推理；</li>
+<li>安装大模型应用开发工具，主要是llama-index和langchain，另外准备向量数据库chroma，方便做向量检索及RAG；</li>
+<li>相关大模型API的调用包；</li>
+<li>其它一些包，如jupyter lab、plot等，方便日常使用；</li>
+</ul>
+</li>
+<li>另外，docker虽然配置和使用容易，但要调试代码，甚至需要魔改一些已有包的时候并不方便，因此尽量确认使用需求后直接在现有环境内安装。</li>
+</ul>
+<h1 id="大模型配置"><a href="#大模型配置" class="headerlink" title="大模型配置"></a>大模型配置</h1><p>由于服务器端资源难以有效保障，colab上的A100&#x2F;40G花费有点高，本地机上又没有显卡，只能多方筹措，拼凑个AI基础服务来：</p>
+<ul>
+<li>高端路线：调用闭源API接口，其中<ul>
+<li>国内使用大语言模型主要走GLM-4和qwen-max-1201；国外测试（偶尔）时使用gemini-pro；</li>
+<li>图文理解用qwen-vl-plus（测试效果很不错，兼具ocr文本理解）；</li>
+</ul>
+</li>
+<li>降级路线：部署开源大模型并提供服务，其中<ul>
+<li>服务器端&#x2F;colab：大语言模型使用qwen-1.5-14b-q4m量化版，图文理解使用miniCPM-v-2b，补充paddleOCR能力\</li>
+<li>本地：加whisper做语音转文本，加bark做文本转语音（考虑替换中），加musicGen做音乐生成（找寻替代品中）、dreamtalk做视频生成（找寻替代品中）<br>基础思路是：调试代码、快速测试思路、厘定应用的可能上限时使用闭源API，自己使用和内部服务时使用开源。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://jiezi4ai.github.io/2023/03/18/%E6%9D%82%E8%B0%88%E2%80%94%E2%80%94%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%96%B0%E4%B8%80%E8%BD%AEAI%E7%83%AD%E7%9A%84%E6%84%9F%E6%82%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jiezi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiezi4AI's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/03/18/%E6%9D%82%E8%B0%88%E2%80%94%E2%80%94%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%92%8C%E6%96%B0%E4%B8%80%E8%BD%AEAI%E7%83%AD%E7%9A%84%E6%84%9F%E6%82%9F/" class="post-title-link" itemprop="url">杂谈——大模型和新一轮AI热的感悟</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2023-03-18 21:54:31" itemprop="dateCreated datePublished" datetime="2023-03-18T21:54:31+08:00">2023-03-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-03-18 21:59:21" itemprop="dateModified" datetime="2024-03-18T21:59:21+08:00">2024-03-18</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>“终有一日，今天的未知之谜会得到解开，但那需要漫长的勤勉研究。人类寿命有限，一个人穷尽毕生之力也不足以攻克天空如此巨大的课题。…… 因此，唯有经过岁月和持续数代的研究，此等知识才能逐渐显现。终有一日，我们的子孙会惊讶于他们的先人竟不了解那些无比浅薄的常识……待到谜团揭开之时，我们早已被遗忘。如果宇宙无法为人类世代提供无穷无尽的谜题，那它就实在太渺小，太可悲了……大自然不会一下子彰显它的全部奥秘。“</p>
+<p><img src="https://pic1.zhimg.com/80/v2-4160d368df02860741913081aeab1904_1440w.webp" alt="宇宙探索"></p>
+<blockquote>
+<p><em>图片由Stable Diffusion生成（提示词：cosmos, marvelous, human endeavor, unknown space and time , inspiring, imaginative）</em></p>
+</blockquote>
+<p>这段是我很喜欢的、在卡尔*萨根的《宇宙》卷首引用的一段话。当我一方面对近期AI取得的进展惊愕不已，另一方面又深感焦虑时，我便想起这段话。如果我们将探索通用人工智能或非生物的智慧视为追寻圣杯之旅的话，要是现在有人说已经找到了一条明确的道路，确保无虞能拿到圣杯；或说已经有方法扫清一切障碍，剩下的只是修修补补的工作了。那要么是我们高估了”智慧“、”智能“的本质和意义，要么这只是一个过分乐观和不严谨的论断。类似的论断会让我们想起二十物理学上空的的“两朵乌云”，以及由此而来的量子力学和相对论的横空出世。事实上，探索AGI的伟大的史诗般的征程才开始，我们恰逢其时，我们也正在其中。</p>
+<p>有理由对于当下AI的各种进展感到兴奋而非焦虑。这不仅仅是因为，以chatGPT为代表的大模型及人们对于AGI探索的热潮，某种程度上给许多互联网企业、技术类企业续了命——在互联网红利过去、遭遇技术寒冬和中小大厂纷纷裁员后，又有了社会或投资者关注的热点。更重要的原因是：首先，AI发展过程具体突破性、颠覆性创新的倾向，过往的技术沉淀并不是明天成功的保障，这意味着新入局者或其他未能完全跟进者，有了重回到同一起跑线的机会。进一步，虽然AI的研究和突破性技术仍然有较高门槛（如OpenAI&#x2F;Google&#x2F;MS&#x2F;其它一些大厂或科研机构），但这轮AI热潮以更贴近应用的技术为主，可以看到在封装好的大模型基础上各类创新百花齐放，这并不需要高深的技术，往往有一个好的思路或解决问题模式，就有可能脱颖而出。另外，由于许多技术选择了开源的路线，让普通人、学习者更容易追随浪潮和置身其中（有一个很可惜且值得注意的趋势是部分科技公司技术闭源的选择）。对于个人和中小组织尤其如此。</p>
+<p><img src="https://pic3.zhimg.com/80/v2-bab478d3a6e655876e24169c90fadc56_1440w.webp" alt="大模型应用需要新想法新模式"></p>
+<p>除大模型应用的广泛机遇外，另一个我个人关注的重点是AI的伦理、人机价值观的一致性、可控性等话题。以往图灵实验等，我们关注的问题是计算机是否有真正的或表现出的自我意识。但大模型基于in-context learning表现出来的涌现特性，让我们惊觉，计算机是否可以通过学习掌握某种底层的逻辑和规律，而这种逻辑和规律是否真正和人类一致（能答对题但使用了一种完全不可知、不可控的解题思路）。因为过去几年来我一直在做算法治理与模型及模型复杂系统的管理，上述话题是我工作的延伸，当然更为复杂。我相信这些问题对于我们走向AGI的未来也更为基础，需要更多的关切。</p>
+<p>在大模型的训练中，我们发现中文语料的匮乏和质量不足已经成为制约AI学习能力的原因之一。日常也不难看到，很多地方信息爆炸而内容匮乏。因此，在我自己学习和探索AI的过程中，可以多做一些文字的记录和创作，做内容的生成者。我喜欢阅读一些典雅的、有温度的文字，隐隐的我感觉它们也是来对抗大模型强大的生成能力，塑造人-机共存&#x2F;共同协作未来的一种方式。</p>
 
       
     </div>
@@ -478,7 +746,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
